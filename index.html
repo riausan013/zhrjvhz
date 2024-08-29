@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashing Text</title>
+    <style>
+        body {
+            margin: 0;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            overflow: hidden;
+        }
+        h1 {
+            color: neon green;
+            font-size: 4em;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0 0 5px lime, 0 0 10px lime, 0 0 15px lime, 0 0 20px lime, 0 0 25px lime, 0 0 30px lime, 0 0 35px lime;
+            animation: flash 1s infinite;
+        }
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hacked by Okabe</h1>
+</body>
+</html>
